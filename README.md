@@ -220,7 +220,7 @@ KinWeights refer to the pretrained Kinetcs dataset. In the original work, the mo
 
 ## Testing
 
-RGB stream:
+RGB Stream:
 
 ```
 #For any linux machine use..
