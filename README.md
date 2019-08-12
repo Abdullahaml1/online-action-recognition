@@ -39,7 +39,7 @@ You can refer to our thesis book and presentation here for further information.
 
 ## Try Our Model
 
-Note: You can try offline action recognition (ready captured videos), but unfortunately, you cannot try online recognition as you must have access to Bibliotheca Alexandria High Performance Computer(BA-HPC). If you do, please contact one of our members for further help.
+Note: You can try offline action recognition (ready captured videos), but unfortunately, you cannot try online recognition as you must have access to Bibliotheca Alexandria High Performance Computer (BA-HPC) with reliable internet speed or a local server to handle video streaming without affecting the running time. Please check our thesis book as there is a well-documented guide for those who want to work with BA-HPC.
 
 1. Open google colab and clone our repos using 
 ```
