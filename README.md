@@ -9,6 +9,7 @@ Kindly, check our latest video [[Youtube Link](https://www.youtube.com/watch?v=-
 # Table of Contents
 * [Introduction](#Introduction)
 * [Thesis and Presentation](#Thesis-and-Presentation)
+* [Server-scripts repository](#Server-scripts-repository)
 * [Try Our Model](#Try-Our-Model)
 * [Prerequisites](#Prerequisites)
 * [Dataset Preparation on Google Colab](#Dataset-Preparation-on-Google-Colab)
@@ -37,9 +38,13 @@ You can refer to our thesis book and presentation here for further information.
 [[Thesis Book](https://drive.google.com/open?id=1m4O7y54LIowofK2ThnZ2Y6gNKBtwfmVK)]
 [[Presentation](https://drive.google.com/file/d/1sCNLpp0VYBiArNoH19p0hyBhD7Kg20Rk/view?usp=sharing)]
 
+## Server-scripts repository
+
+We have created [server-scripts](https://github.com/The-FaZe/server_scripts) to handle testing and configuration of Bibliotheca Alexandria High Performance Computer (BA-HPC).
+
 ## Try Our Model
 
-Note: You can try offline action recognition (ready captured videos), but unfortunately, you cannot try online recognition as you must have access to Bibliotheca Alexandria High Performance Computer (BA-HPC) with reliable internet speed or a local server to handle video streaming without affecting the running time. Please check our thesis book as there is a well-documented guide for those who want to work with BA-HPC.
+Note: You can try offline action recognition (ready captured videos), but unfortunately, you cannot try online recognition as you must have access to BA-HPC with reliable internet speed or a local server to handle video streaming without affecting the running time. Please check our thesis book as there is a well-documented guide for those who want to work with BA-HPC.
 
 1. Open google colab and clone our repos using 
 ```
@@ -158,7 +163,7 @@ Make sure to download UCF_lists folder. then, by running the code, you will have
 To train our model, use main.py script by running the following:
 
 For RGB stream:
-```
+```bash
 #for any linux machine use .. 
 
 python3 <main.py directroy> ucf101 RGB \
@@ -186,7 +191,7 @@ Hyperparameters tuning was done by the authors of TSN paper and we did a little 
 You can find what each symbol stands for in the scripting file "parser_commands.py".
 
 For RGB Difference stream:
-```
+```bash
 #For any linux machine use..
 python3 /content/real-time-action-recognition/main.py ucf101 RGBDiff \
 <ucf101_rgb_train_list> <ucf101_rgb_val_list> \
@@ -222,7 +227,7 @@ KinWeights refer to the pretrained Kinetcs dataset. In the original work, the mo
 
 RGB Stream:
 
-```
+```bash
 #For any linux machine use..
 python3 <test_models.py directory> ucf101 RGB <ucf101_test_list> <weights_directory> \
 	   --gpus 0 1 --arch BNInception --save_scores <score_file_name> \
@@ -240,7 +245,7 @@ python3 /content/real-time-action-recognition/test_models.py ucf101 RGB \
 ```
 
 RGBDiff Stream:
-```
+```bash
 #For any linux machine use..
 python3 <test_models.py directory> ucf101 RGBDiff <ucf101_test_list> <weights_directory> \
 	   --gpus 0 1 --arch BNInception --save_scores <score_file_name> \
@@ -261,7 +266,8 @@ If you have only one GPU, you can remove gpus & worker parameters.
 ----
 ## Contact
 For any questions, please contact.
-```
-Ahmed Gamaleldin: ahmedgamal1496@gmail.com
-Ahmed Saied: ahmed1337saied@gmail.com
-```
+
+Ahmed Gamaleldin: [ahmedgamal1496@gmail.com](ahmedgamal1496@gmail.com).\
+Ahmed Saied: [ahmedgamal1496@gmail.com](ahmed1337saied@gmail.com).\
+Abdullah Aml: [abdullahamlyossef@gmail.com](abdullahamlyossef@gmail.com).
+
